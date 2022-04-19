@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Cênica</title>
+    <title>Home - Nova Cênica</title>
     
     <!-- Favicon icon -->
-    <link href="" rel="shortcut icon" type="image/x-icon"/>
+    <link href="{% static 'img/mask_img.png' %}" rel="shortcut icon" type="image/x-icon"/>
     
     <!-- bootstrap -->
     <link
@@ -23,8 +23,119 @@
     
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
-<body>
-    <h3>Bem vindo ao site da produtora Nova Cênica</h3>
+<body class="d-flex flex-column h-100">
+    <main role="main" class="flex-shrink-0">
+        {% block menu %}
+        <header class="navbar sticky-top navbar-expand navbar-dark justify-content-center bd-navbar">
+            <a class="navbar-brand" href="">
+            <img src="" height="40" alt="" />
+            Nova Cênica logo
+            </a>
+            <div class="navbar-nav-scroll">  
+            <ul class="navbar-nav bd-navbar-nav flex=row">
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                        Filmes
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    Sobre
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    Protifólio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                    <i class="fas fa-camera-retro" aria-hidden="true"></i>
+                    Serviços
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    Contatos
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </header>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="main">    
+        <img src="{% static 'img/mask_img.png' %}" height="200" alt="">
+    </div>
+    <div class="container-fluid d-flex justify-content-center" id="divCont1">
+        <h1>Nossas Produções</h1>
+        
+        </div>
+    </div>
+          {% endblock %}
+    
+          <div class="container py-5 col-md-8">
+            {% block content %} 
+            
+            <div class="container-fluid" id="divCont2">
+                <h1 class="col-2">FILMES</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="container-fluid" id="divCont3">
+                <h1 class="col-2">SOBRE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="container-fluid" id="divCont4">
+                <h1 class="col-2">PORTIFOLIO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="container-fluid" id="divCont5">
+                <h1 class="col-2">SERVICOS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="container-fluid" id="divCont6">
+                <h1 class="col-2">CONTATO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            
+            {% endblock %}
+          </div>
+        
+    </main>
+    
+        <footer class="mt-auto">
+          {% block footer %}
+          <div class="container-fluid text-center p-3">
+            <div class="row justify-content-md-center">
+              <div class="col text-center">
+                <span><strong>Nova Cênica® - V.1.0</strong></span><br>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md-auto">
+                <span><strong>Desenvolvido por Joey Resende</strong></span>
+              </div>
+              <div class="col-md-auto">
+                <a href="https://github.com/Joey-Resende" target="_blank">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-auto">
+                <a href="https://www.linkedin.com/in/givanildo-resende/" target="_blank">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endblock %}
+        </footer>
+   
+    
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
