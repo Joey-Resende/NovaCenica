@@ -20,7 +20,7 @@ h1 {
 #divCont1 {
     min-height: 525px;
     background-image: url("/static/img/img1.jpg");
-    background-size: auto;
+    background-size: 25%;
 }
 
 #divCont2 {
