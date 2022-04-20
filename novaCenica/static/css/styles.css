@@ -7,6 +7,10 @@ header {
 
 }
 
+nav {
+    background-color: black;
+}
+
 h1 {
     padding-top: 80px;
     color: #474747;
