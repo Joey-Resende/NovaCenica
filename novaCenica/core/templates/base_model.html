@@ -32,7 +32,7 @@
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
   </head>
   
-  <body>
+  <body class="d-flex flex-column h-100">
     {% block menu %}
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -121,35 +121,31 @@
       </div>
 
 
-      <!-- Mensagens de marketing e outras featurezinhas
-      ================================================== -->
-      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
-
       <div class="container marketing">
 
         <!-- Quatro colunas de texto, abaixo do carousel -->
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 card mb-3 shadow-sm">
             <h2>Filmes</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-dark" href="#" role="button">Filmes</a></p>
-          </div><!-- /.col-lg-3 -->
-          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3 card mb-3 shadow-sm">
             <h2>Filmes</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-dark" href="#" role="button">Filmes</a></p>
-          </div><!-- /.col-lg-3 -->
-          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3 card mb-3 shadow-sm">
             <h2>Filmes</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-dark" href="#" role="button">Filmes</a></p>
-          </div><!-- /.col-lg-3 -->
-          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3 card mb-3 shadow-sm">
             <h2>Filmes</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-dark" href="#" role="button">Filmes</a></p>
-          </div><!-- /.col-lg-3 -->
-        </div><!-- /.row -->
+          </div>
+        </div>
 
 
         <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
@@ -211,11 +207,9 @@
 
     <!-- FOOTER -->
     {% block footer %}
-    <footer class="mt-auto">
-      <div class="container-fluid p-3">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy; Joey Resende, 2022 &middot; <a href="https://github.com/Joey-Resende" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a> &middot; <a href="https://www.linkedin.com/in/givanildo-resende/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></p>
-      </div>
+    <footer class="container">
+        <p class="float-right"><a href="#"><i class="fas fa-arrow-alt-circle-up fa-2x" aria-hidden="true"></i></a></p>
+        <p>&copy; Joey Resende, 2022 &middot; <a href="https://github.com/Joey-Resende" target="_blank"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a> &middot; <a href="https://www.linkedin.com/in/givanildo-resende/" target="_blank"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></p>
     </footer>
     {% endblock %}
 

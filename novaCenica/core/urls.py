@@ -3,5 +3,5 @@ from .views import HomeView, TubeView
 
 urlpatterns = [
     path('home/', HomeView.as_view(), name='home'),
-    path('TubeCenica/', TubeView.as_view(), name='TubeCenica'),
+    path('tube_cenica/', TubeView.as_view(), name='TubeCenica'),
 ]

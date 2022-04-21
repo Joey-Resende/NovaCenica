@@ -20,39 +20,3 @@ h1 {
     min-height: 400px;
     background-color: #EDCA28;
 }
-
-#divCont1 {
-    min-height: 525px;
-    background-image: url("/static/img/img1.jpg");
-    background-size: 25%;
-}
-
-#divCont2 {
-    min-height: 500px;
-
-}
-
-#divCont3 {
-    min-height: 500px;
-
-}
-
-#divCont4 {
-    min-height: 500px;
-
-}
-
-#divCont5 {
-    min-height: 500px;
-
-}
-
-#divCont6 {
-    min-height: 500px;
-
-}
-
-
-footer {
-    background-color: #474747;
-}

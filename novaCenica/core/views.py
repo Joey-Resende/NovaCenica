@@ -6,4 +6,4 @@ class HomeView(TemplateView):
 
 
 class TubeView(TemplateView):
-    template_name = 'TubeCenica.html'
+    template_name = 'tube_cenica.html'
