@@ -7,3 +7,7 @@ class HomeView(TemplateView):
 
 class TubeView(TemplateView):
     template_name = 'tube_cenica.html'
+
+
+class DetailVideoView(TemplateView):
+    template_name = 'detail.html'

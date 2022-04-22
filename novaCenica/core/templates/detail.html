@@ -1,0 +1,43 @@
+{% extends 'base_model.html' %}
+{% load static %}
+
+{% block title %}
+<title>Detalhes - Nova Cênica</title>
+{% endblock %}
+
+{% block menu %}
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="http://localhost:8000/home/">Nova Cênica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container marketing">
+
+    <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">O ator geek - Uma viajem ao multiverso em meu quarto.</h2>
+        <p class="lead">Este mini Documentário mostra um pouco da coleção de HQs do ator Claudemir Barbosa e mergulha em vários universos surpreendentes disponíveis em sua coleção. Cada revista aberta será vivida por atores que darão vozes a personagens icônicos da cultura pop. Venha mergulhar no universo dos quadrinhos junto com a gente!</p>
+    </div>
+    
+    <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" src="{% static 'img/folder2.jpeg' %}" alt="">
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mzZZMUK5W3A" allowfullscreen></iframe>
+    </div>
+    
+
+</div><!-- /.container -->
+
+</main>
+{% endblock %}
