@@ -69,17 +69,16 @@
     </header>
     {% endblock %}
     
-    {% block content %}
+    
     <main role="main">
 
       <section class="jumbotron text-center" id="fundotube">
         <div class="container">
-          <img class="featurette-image img-fluid mx-auto" height="350"
-          width="350" src="{% static 'img/nova_cenica_logo1.png' %}" alt="">
+          <img class="featurette-image img-fluid mx-auto" id="logo1" src="{% static 'img/nova_cenica_logo1.png' %}" alt="">
         </div>
       </section>
 
-     
+      {% block content %}
       <div class="container marketing">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
